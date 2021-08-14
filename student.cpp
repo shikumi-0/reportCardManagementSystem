@@ -205,6 +205,10 @@ int search_index(char *usn)
       else
 	  return -1;
 }
+
+/******************DISPLAYING ALL RECORDS******************/
+
+
 void dispall()
 {	 
      student s;
@@ -229,6 +233,7 @@ void dispall()
 }
 
 
+/******************DELETING A RECORD ******************/
 
 void del(char *st_usn)
 {
@@ -278,7 +283,10 @@ void del(char *st_usn)
 	
 }
 
+
 /******************SEARCING FOR A RECORD (STUDENT)******************/
+
+
 void search_student()
 {
      
@@ -318,6 +326,9 @@ void search_student()
      }
      f.close();
 }
+
+
+/*******************MODIFYING STUDENT DETAILS*******************/
 
 
 void modify()
@@ -509,6 +520,8 @@ void modify()
     	file1.close();
     }
 }
+
+/*******************ADDING STUDENTS*******************/
 
 void add()
 {   
@@ -710,6 +723,8 @@ void add()
 
 
 /*******************SPLITTING INTO DIFFERENT USERS*******************/
+
+
 void Segregation()
 {
      int n;
@@ -746,6 +761,9 @@ void Segregation()
 }
 
 
+/***************************INTRO***************************/
+
+
 void Intro()
 {
      cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\tA PROGRAM BY SHIVANG, SITANSHU AND NITISH";
@@ -767,7 +785,11 @@ void Intro()
      Sleep(1000);
      system("cls"); 
 }
+
+
 /*************************TEACHER FUNCTION*************************/
+
+
 void Teacher()
 {	char a[20];
 	char st_usn[20];
@@ -830,6 +852,8 @@ void Teacher()
 
 
 /*************************STUDENT FUNCTION*************************/
+
+
 void Student()
 {
      int n;
@@ -863,6 +887,8 @@ void Student()
 
 
 /*************************PASSWORD FUNCTION*************************/
+
+
 void Password()
 {
      char pass[7];
@@ -900,14 +926,21 @@ void Password()
      }
 }
 
+
 /*********************SETTING FUNCTION SEQUENCE*********************/
+
+
 void SEQUENCE()
 {
      Intro();
      Segregation();
 }
 
+
 /***************************MAIN FUNCTION***************************/
+
+
+
 int main()
 {
      system("title REPORT CARD MANAGEMENT SYSTEM");
